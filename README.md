@@ -1,6 +1,5 @@
 # Automatic world pregenerator
 Easy world generation
----
 Perfect for survival servers.
 
 May not work on Windows!\
