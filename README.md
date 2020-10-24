@@ -1,9 +1,11 @@
 # Automatic world pregenerator
+
 Easy world generation.\
 Perfect for survival servers.
+
 May not work on Windows!\
 Supports MC 1.8.8.
----
+
 ### Planned features:
 - More versions
 - Bot mode
