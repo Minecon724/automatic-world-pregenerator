@@ -6,10 +6,11 @@ Perfect for survival servers.
 May not work on Windows!\
 Supports MC 1.8.8.
 
+You can recieve notifications on mobile using [Pushbullet](https://pushbullet.com)
+
 ### Planned features:
 - More versions
 - Bot mode
-- Notifications on mobile/desktop
 - External world locations
 
 # How to
