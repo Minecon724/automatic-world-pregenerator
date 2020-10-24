@@ -15,7 +15,7 @@ try:
     with open('conf.yml') as f:
         data = yaml.load(f, Loader=yaml.FullLoader)
 except:
-    data = {'lang': 'en', 'world_size': 2000, 'world_name': 'world', 'ram_size': 1024, 'server_dir': os.getcwd()}
+    data = {'lang': 'en', 'world_size': 2000, 'world_name': 'world', 'ram_size': 1024, 'server_dir': os.getcwd(), 'pushbullet': {'enabled': False, 'token': ' ', 'device': ' '}}
     with open('conf.yml', 'w') as f:
         yaml.dump(data, f)
     print("Config file created! Please configure it now.")
@@ -31,6 +31,12 @@ rozm = data['world_size']
 swi = data['world_name']
 ram = data['ram_size']
 lok = data['server_dir']
+notif = data['pushbullet']
+if notif['enabled']:
+    from pushbullet import Pushbullet
+    pb = Pushbullet(notif['token'])
+    dev = pb.get_device(notif['device'])
+    pbttl = lng['pushbullet_title']
 print("{}: {}".format(lng['size'], rozm))
 print("{}: {}".format(lng['name'], swi))
 print("{}: {}".format(lng['maxram'], ram))
@@ -60,6 +66,8 @@ srv.sendline("wb {} fill".format(swi))
 srv.sendline("wb fill confirm")
 srv.expect('WorldBorder map generation task for world "{}" started.'.format(swi))
 print(lng['generating'])
+if notif['enabled']:
+    dev.push_note(pbttl, lng['generating'])
 prevchks = 0
 frame = ""
 for i in range(20):
@@ -87,6 +95,8 @@ try:
             prevchks = int(parsed[0])
         else:
             print(lng['finished'])
+            if notif['enabled']:
+                dev.push_note(pbttl, lng['finished'])
             break
 except KeyboardInterrupt:
     pass

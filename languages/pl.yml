@@ -15,3 +15,4 @@ temperature: Temperatura urzadzenia
 cpufreq: Taktowanie CPU
 finished: Ukonczono!
 stopping: Zatrzymywanie serwera...
+pushbullet_title: Pregenerator swiatow
