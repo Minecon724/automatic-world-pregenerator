@@ -19,7 +19,7 @@ git clone https://github.com/Minecon724/automatic-world-pregenerator
 cd automatic-world-pregenerator
 sudo ./install.sh
 ```
-# Uninstall
+## Uninstall
 Just remove the `automatic-world-pregenerator` directory.
-
+***
 That's all!
