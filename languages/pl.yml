@@ -1,0 +1,17 @@
+size: Rozmiar swiata
+name: Nazwa swiata
+maxram: Przydzielony RAM
+srvloc: Lokalizacja serwera
+downloading: Pobieranie plikow...
+unpacking: Rozpakowywanie...
+starting: Uruchamianie serwera...
+started: Serwer uruchomiony.
+loaded: Swiat zaladowany.
+generating: Rozpoczeto proces generacji.
+total: Wygenerowane chunki
+mem: Wolna pamiec
+progress: Postep
+temperature: Temperatura urzadzenia
+cpufreq: Taktowanie CPU
+finished: Ukonczono!
+stopping: Zatrzymywanie serwera...

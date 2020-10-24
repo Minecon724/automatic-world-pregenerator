@@ -1,0 +1,17 @@
+size: World size
+name: World name
+maxram: Max RAM usage
+srvloc: Server location
+downloading: Downloading files...
+unpacking: Unpacking...
+starting: Starting server...
+started: Server started.
+loaded: World loaded.
+generating: Starting generation process...
+total: Total chunks generated
+mem: Free memory
+progress: Progress
+temperature: Device temperature
+cpufreq: CPU clock speed
+finished: Finished!
+stopping: Stopping server...
