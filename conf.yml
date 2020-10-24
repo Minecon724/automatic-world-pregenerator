@@ -1,9 +1,0 @@
-lang: en
-pushbullet:
-  device: 'Xiaomi Redmi Note 8 Pro'
-  enabled: True
-  token: 'o.X1rrvdEXO79XFNy9tvQqVLcS6FovQV93'
-ram_size: 1024
-server_dir: /home/pi/wwwww
-world_name: world
-world_size: 500
