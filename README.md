@@ -19,6 +19,10 @@ git clone https://github.com/Minecon724/automatic-world-pregenerator
 cd automatic-world-pregenerator
 sudo ./install.sh
 ```
+## Run
+```
+python3 start.py
+```
 ## Uninstall
 Just remove the `automatic-world-pregenerator` directory.
 ***
