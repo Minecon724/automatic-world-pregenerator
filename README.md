@@ -4,7 +4,7 @@ Easy world generation.\
 Perfect for survival servers.
 
 May not work on Windows!\
-Supports MC 1.8.8.
+Supports MC 1.8.8 and 1.12.2.
 
 You can recieve notifications on mobile using [Pushbullet](https://pushbullet.com)
 
@@ -28,3 +28,6 @@ python3 start.py
 Just remove the `automatic-world-pregenerator` directory.
 ***
 That's all!
+
+# Video showcase
+SOON
