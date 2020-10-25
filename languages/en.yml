@@ -16,3 +16,4 @@ cpufreq: CPU clock speed
 finished: Finished!
 stopping: Stopping server...
 pushbullet_title: World pregenerator
+unknown_version: Unknown version number.

@@ -15,7 +15,7 @@ try:
     with open('conf.yml') as f:
         data = yaml.load(f, Loader=yaml.FullLoader)
 except:
-    data = {'lang': 'en', 'world_size': 2000, 'world_name': 'world', 'ram_size': 1024, 'server_dir': os.getcwd(), 'pushbullet': {'enabled': False, 'token': ' ', 'device': ' '}}
+    data = {'version': '1.8.8', 'lang': 'en', 'world_size': 2000, 'world_name': 'world', 'ram_size': 1024, 'server_dir': os.getcwd(), 'pushbullet': {'enabled': False, 'token': ' ', 'device': ' '}}
     with open('conf.yml', 'w') as f:
         yaml.dump(data, f)
     print("Config file created! Please configure it now.")
@@ -47,7 +47,13 @@ if not os.path.exists(lok + "/wgen"):
         os.mkdir(lok)
     os.chdir(lok)
     mega = Mega().login()
-    mega.download_url("https://mega.nz/file/fNxUkDpa#XW22WLpg7yzShExpNsIdrmfcxNMyk1Gl_vWA8hUeDT4")
+    if data['version'] == '1.8.8':
+        mega.download_url("https://mega.nz/file/fNxUkDpa#XW22WLpg7yzShExpNsIdrmfcxNMyk1Gl_vWA8hUeDT4")
+    elif data['version'] == '1.12.2':
+        mega.download_url("https://mega.nz/file/EmAFBQbD#wHSn9SaglrcuE1BVN-GyBrrLkLxnx2e6x5ajbWzCTaA")
+    else:
+        print(lng['unknown_version'])
+        exit()
     print(lng['unpacking'])
     with zipfile.ZipFile("wgen.zip", "r") as zip_ref:
         zip_ref.extractall(lok)
