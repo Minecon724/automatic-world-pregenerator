@@ -1,17 +1,19 @@
-# Automatic world pregenerator
+# Automatic Minecraft world pregenerator
 
 Easy world generation.\
 Perfect for survival servers.
 
-May not work on Windows!\
-Supports MC 1.8.8 and 1.12.2.
+Tested and working on Linux.\
+May not work on other platforms.\
+Supported Minecraft versions:
+- 1.8.8 
+- 1.12.2
 
-You can recieve notifications on mobile using [Pushbullet](https://pushbullet.com)
+You can recieve notifications on Android and idk thanks to [Pushbullet](https://pushbullet.com)
 
 ### Planned features:
 - More versions
-- Bot mode
-- External world locations
+- Custom save location
 
 # How to
 ## Install
@@ -25,9 +27,9 @@ sudo ./install.sh
 python3 start.py
 ```
 ## Uninstall
-Just remove the `automatic-world-pregenerator` directory.
+Just remove the `automatic-world-pregenerator` folder.
 ***
 That's all!
 
 # Video showcase
-SOON
+SOON™
