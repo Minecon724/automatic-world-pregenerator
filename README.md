@@ -5,6 +5,7 @@ Perfect for survival servers.
 
 Tested and working on Linux.\
 May not work on other platforms.\
+
 Supported Minecraft versions:
 - 1.8.8 
 - 1.12.2
