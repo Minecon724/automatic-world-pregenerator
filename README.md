@@ -4,7 +4,7 @@ Easy world generation.\
 Perfect for survival servers.
 
 Tested and working on Linux.\
-May not work on other platforms.\
+May not work on other platforms.
 
 Supported Minecraft versions:
 - 1.8.8 
